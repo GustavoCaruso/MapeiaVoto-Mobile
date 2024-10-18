@@ -4,7 +4,7 @@
     "slug": "MapeiaVoto",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/new-icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -17,9 +17,13 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ggustac.mapeiavoto",
+      "permissions": [
+        "INTERNET"  
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +35,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "73030dfc-9db5-41e5-9467-a0b58d13b8a2"
+      }
     }
   }
 }

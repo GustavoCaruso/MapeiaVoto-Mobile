@@ -2,9 +2,9 @@ import { Stack } from "expo-router";
 
 export default function RootLayout() {
   return (
+    // O Stack agora vai automaticamente identificar as telas no diretório /app
     <Stack>
-      <Stack.Screen name="index" /> {/* Aponta para /app/index.tsx */}
-      <Stack.Screen name="candidato/form" /> {/* Será mapeado para /app/candidato/form.tsx */}
+      {/* Não há necessidade de declarar explicitamente cada tela */}
     </Stack>
   );
 }

@@ -116,6 +116,12 @@ export default function CandidatoList() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Lista de Candidatos</Text>
+      
+      {/* Botão para cadastrar novo candidato */}
+      <TouchableOpacity style={styles.newButton} onPress={() => router.push('./form')}>
+        <Text style={styles.newButtonText}>Cadastrar Novo Candidato</Text>
+      </TouchableOpacity>
+
       {loading ? (
         <ActivityIndicator size="large" color="#0000ff" />
       ) : (
@@ -165,5 +171,17 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginLeft: 10,
+  },
+  newButton: {
+    backgroundColor: '#007bff',
+    padding: 10,
+    borderRadius: 5,
+    marginBottom: 20,
+    alignItems: 'center',
+  },
+  newButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
